@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnQbit - Ihr Partner für das papierlose Büro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                        accent: '#10b981',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { 
+            background: linear-gradient(rgba(59, 130, 246, 0.8), rgba(139, 92, 246, 0.8)), url('https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .hover-scale { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.03); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <header class="fixed w-full z-10 transition-all duration-300 bg-transparent" id="header">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-white" id="company-name">InnQbit</h1>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#herausforderungen" class="text-white hover:text-blue-300 transition-colors">Herausforderungen</a></li>
+                    <li><a href="#loesungen" class="text-white hover:text-blue-300 transition-colors">Lösungen</a></li>
+                    <li><a href="#vorteile" class="text-white hover:text-blue-300 transition-colors">Vorteile</a></li>
+                    <li><a href="#referenzen" class="text-white hover:text-blue-300 transition-colors">Referenzen</a></li>
+                    <li><a href="#kontakt" class="text-white hover:text-blue-300 transition-colors">Kontakt</a></li>
+                </ul>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <ul class="bg-white rounded-lg shadow-lg">
+                    <li><a href="#herausforderungen" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Herausforderungen</a></li>
+                    <li><a href="#loesungen" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Lösungen</a></li>
+                    <li><a href="#vorteile" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Vorteile</a></li>
+                    <li><a href="#referenzen" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Referenzen</a></li>
+                    <li><a href="#kontakt" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center gradient-bg text-white">
+            <div class="text-center px-4">
+                <h2 class="text-5xl font-bold mb-6">Willkommen im papierlosen Büro der Zukunft</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Steigern Sie Effizienz und Nachhaltigkeit durch digitale Transformation. Vom Papierchaos zur digitalen Ordnung - mit InnQbit.
+                </p>
+                <a href="#kontakt" class="bg-white text-primary py-3 px-8 rounded-full font-bold hover:bg-blue-100 transition-colors inline-block hover-scale">
+                    Jetzt digitalisieren
+                </a>
+            </div>
+        </section>
+
+        <section id="herausforderungen" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Herausforderungen des papierbasierten Büros</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-primary w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Dokumentenchaos</h3>
+                        <p class="text-gray-600">Überfüllte Aktenschränke und verlorene Dokumente gehören der Vergangenheit an. Wir digitalisieren Ihre Unterlagen für schnellen und einfachen Zugriff.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-primary w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Zeitaufwändige Prozesse</h3>
+                        <p class="text-gray-600">Manuelle Papierprozesse kosten wertvolle Zeit. Unsere digitalen Workflows automatisieren Ihre Abläufe und steigern die Effizienz.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-primary w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Sicherheitsrisiken</h3>
+                        <p class="text-gray-600">Physische Dokumente sind anfällig für Verlust und unbefugten Zugriff. Unsere digitalen Lösungen bieten höchste Sicherheitsstandards für Ihre sensiblen Daten.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loesungen" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Unsere Lösungen für Ihr papierloses Büro</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-accent w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Digitale Dokumentenverwaltung</h3>
+                        <p class="text-gray-600">Scannen, indexieren und archivieren Sie Ihre Dokumente digital. Greifen Sie jederzeit und überall auf Ihre Daten zu.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-accent w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Automatisierte Workflows</h3>
+                        <p class="text-gray-600">Digitalisieren Sie Ihre Geschäftsprozesse mit intelligenten Workflows. Reduzieren Sie manuelle Eingaben und beschleunigen Sie Abläufe.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-accent w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Cloud-Integration</h3>
+                        <p class="text-gray-600">Nutzen Sie die Vorteile der Cloud für sicheres Dokumentenmanagement und nahtlose Zusammenarbeit im Team.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#kontakt" class="bg-primary text-white py-3 px-8 rounded-full font-bold hover:bg-secondary transition-colors inline-block hover-scale">
+                        Lösungen entdecken
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="vorteile" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Vorteile des papierlosen Büros</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-primary w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Zeitersparnis</h3>
+                        <p class="text-gray-600">Reduzieren Sie die Zeit für Dokumentensuche und -verwaltung um bis zu 70%. Konzentrieren Sie sich auf Ihre Kernaufgaben.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-primary w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Kosteneinsparung</h3>
+                        <p class="text-gray-600">Sparen Sie bis zu 40% der Kosten für Papier, Druck und Lagerung. Investieren Sie in Ihre digitale Zukunft.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale">
+                        <svg class="text-primary w-12 h-12 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-4">Verbesserte Zusammenarbeit</h3>
+                        <p class="text-gray-600">Ermöglichen Sie Ihrem Team den Zugriff auf Dokumente von überall. Steigern Sie die Produktivität durch nahtlose Kollaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="referenzen" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Erfolgsgeschichten unserer Kunden</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale flex flex-col justify-between h-full">
+                        <div class="flex flex-col items-center mb-6">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Thomas Meyer" class="w-24 h-24 object-cover rounded-full mb-4 shadow-md">
+                            <p class="font-bold text-lg text-center">Thomas Meyer</p>
+                            <p class="text-primary text-center text-sm">Geschäftsführer, Meyer & Co. GmbH</p>
+                        </div>
+                        <p class="text-gray-600 text-center text-sm">"Dank InnQbit haben wir unsere Papierprozesse um 90% reduziert. Unsere Mitarbeiter arbeiten jetzt effizienter und können sich auf wichtigere Aufgaben konzentrieren."</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale flex flex-col justify-between h-full">
+                        <div class="flex flex-col items-center mb-6">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Anna Schmidt" class="w-24 h-24 object-cover rounded-full mb-4 shadow-md">
+                            <p class="font-bold text-lg text-center">Anna Schmidt</p>
+                            <p class="text-primary text-center text-sm">CFO, Schmidt Elektronik AG</p>
+                        </div>
+                        <p class="text-gray-600 text-center text-sm">"Die Umstellung auf ein papierloses Büro mit InnQbit hat unsere Finanzprozesse revolutioniert. Wir sparen Zeit und Ressourcen und haben einen besseren Überblick über unsere Finanzen."</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover-scale flex flex-col justify-between h-full">
+                        <div class="flex flex-col items-center mb-6">
+                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Michael Weber" class="w-24 h-24 object-cover rounded-full mb-4 shadow-md">
+                            <p class="font-bold text-lg text-center">Michael Weber</p>
+                            <p class="text-primary text-center text-sm">IT-Leiter, Weber Logistik GmbH</p>
+                        </div>
+                        <p class="text-gray-600 text-center text-sm">"Mit InnQbit konnten wir unsere IT-Infrastruktur optimieren und digitalisieren. Die Effizienzsteigerung in unserem papierlosen Büro ist bemerkenswert."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Starten Sie Ihre papierlose Zukunft</h2>
+                <p class="text-xl mb-12 text-center max-w-3xl mx-auto text-gray-600">Kontaktieren Sie uns für eine kostenlose Erstberatung und erfahren Sie, wie wir Ihr Unternehmen in ein effizientes, papierloses Büro transformieren können.</p>
+                <form id="contact-form" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="col-span-1">
+                            <label for="name" class="block text-gray-700 text-sm font-semibold mb-2">
+                                <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                                Name
+                            </label>
+                            <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300" required>
+                        </div>
+                        <div class="col-span-1">
+                            <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">
+                                <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                E-Mail
+                            </label>
+                            <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300" required>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <label for="company" class="block text-gray-700 text-sm font-semibold mb-2">
+                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                            Unternehmen
+                        </label>
+                        <input type="text" id="company" name="company" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300">
+                    </div>
+                    <div class="mt-6">
+                        <label for="challenge" class="block text-gray-700 text-sm font-semibold mb-2">
+                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Ihre größte Herausforderung beim Übergang zum papierlosen Büro
+                        </label>
+                        <textarea id="challenge" name="challenge" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300" required></textarea>
+                    </div>
+                    <div class="mt-8 flex flex-col sm:flex-row items-center justify-between">
+                        <button type="submit" class="w-full sm:w-auto bg-primary text-white py-3 px-8 rounded-full hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all duration-300 font-bold transform hover:scale-105">
+                            Jetzt Beratungstermin sichern
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="w-full md:w-1/3 text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">InnQbit</h3>
+                    <p class="text-gray-400">Ihr Partner für das papierlose Büro</p>
+                </div>
+                <div class="w-full md:w-1/3 text-center mb-6 md:mb-0">
+                    <ul class="inline-flex flex-wrap justify-center space-x-4">
+                        <li><a href="#" class="hover:text-primary transition-colors">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Impressum</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3 text-center md:text-right">
+                    <p class="text-gray-400">&copy; 2024 InnQbit. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const companyName = document.getElementById('company-name');
+            if (window.scrollY > 10) {
+                header.classList.remove('bg-transparent');
+                header.classList.add('bg-white', 'shadow-md');
+                header.querySelectorAll('a').forEach(link => link.classList.remove('text-white'));
+                header.querySelectorAll('a').forEach(link => link.classList.add('text-gray-800'));
+                document.querySelector('#mobile-menu-button').classList.remove('text-white');
+                document.querySelector('#mobile-menu-button').classList.add('text-gray-800');
+                companyName.classList.remove('text-white');
+                companyName.classList.add('text-gray-800');
+            } else {
+                header.classList.add('bg-transparent');
+                header.classList.remove('bg-white', 'shadow-md');
+                header.querySelectorAll('a').forEach(link => link.classList.add('text-white'));
+                header.querySelectorAll('a').forEach(link => link.classList.remove('text-gray-800'));
+                document.querySelector('#mobile-menu-button').classList.add('text-white');
+                document.querySelector('#mobile-menu-button').classList.remove('text-gray-800');
+                companyName.classList.add('text-white');
+                companyName.classList.remove('text-gray-800');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple form submission (replace with your actual form handling logic)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Vielen Dank für Ihre Anfrage! Wir werden uns in Kürze bei Ihnen melden, um Ihren Weg zum papierlosen Büro zu besprechen.');
+        });
+    </script>
+</body>
+</html>
